@@ -1,0 +1,12 @@
+Listado de Pools
+# zpool list
+Mostrar estado pool
+# zpool status 
+Crear pool
+# zpool create namepool raidz3 /dev/sda /dev/sdb /dev/sdc
+Agrega disco de spare. Si se rompe uno se pone este automaticamente.
+# zpool add namepool spare /dev/sdj
+Para que se reemplace automaticamente
+# zpool autoreplace=on namepool
+Exportar un pool para que se guarde todo lo que falta por guardar y sacarlo del sistema
+# zpool export namepool
