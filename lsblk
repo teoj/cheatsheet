@@ -1,13 +1,13 @@
 lsblk Ejemplos de uso
 Mostrar Etiqueta y UUID
-lsblk --fs /dev/sd*
+# lsblk --fs /dev/sd*
 Mostrar PARTUUID
-lsblk --output +PARTUUID /dev/sd*
+# lsblk --output +PARTUUID /dev/sd*
 Mostrar en forma de lista
-lsblk -l /dev/sd*
+# lsblk -l /dev/sd*
 Mostrar sistema de archivos
-lsblk -f /dev/sd*
+# lsblk -f /dev/sd*
 Ver columnas mostrable lsblk -o
-lsblk -help
+# lsblk -help
 Ver si ssd o no ssd. Si 1 entonces no ssd (rotacional)
-lsblk -o name,label,fstype,rota,mountpoint /dev/sd*
+# lsblk -o name,label,fstype,rota,mountpoint /dev/sd*
